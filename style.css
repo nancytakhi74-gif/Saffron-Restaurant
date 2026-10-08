@@ -1429,3 +1429,18 @@ background:#D4AF37;
 #close-cart:hover{
     color:red;
 }
+
+/* --- MOBILE FIX --- */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  img, iframe, section, div {
+    max-width: 100% !important;
+  }
+  iframe {
+    width: 100% !important;
+  }
+}
