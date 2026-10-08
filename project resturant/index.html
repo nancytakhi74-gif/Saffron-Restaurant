@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saffron Restaurant | Fine Dining & Indian Cuisine</title>
+    <link rel="icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Restaurant</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <h2>Saffron Restaurant</h2>
+            </div>
+            <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#menu">Menu</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#booking">Book Table</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+      <div class="cart-icon" id="cart-btn">
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <span id="cart-count">0</span>
+
+</div>
+
+        </nav>
+
+    </header>
+    <div id="cart-panel">
+
+    <h2>My Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <h3>Total : ₹<span id="cart-total">0</span></h3>
+
+    <button class="checkout-btn">Order Now</button>
+
+</div>
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Saffron Restaurant</h1>
+
+<p>
+Experience the finest Indian cuisine, crafted with fresh ingredients and served with love.
+</p>
+
+<a href="#booking" class="btn">Reserve Your Table</a>
+
+        </div>
+        </section>
+        <!-- About Us Section -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <div class="about-images">
+
+            <img src="images/chef.png" alt="Chef" class="chef-img">
+
+            <img src="images/restaurant.png" alt="Restaurant" class="restaurant-img">
+
+        </div>
+
+        <div class="about-content">
+
+            <h4>About Us</h4>
+
+            <h2>Welcome to Saffron Restaurant</h2>
+
+            <p>
+                At Saffron Restaurant, we believe that every meal should be a memorable experience.
+                Our expert chefs prepare authentic Indian dishes using fresh ingredients and
+                traditional recipes. Whether you're here for a family dinner, a celebration,
+                or a casual meal, we promise exceptional taste and warm hospitality.
+            </p>
+
+            <div class="features">
+
+    <div class="feature-box">
+        <i class="fa-solid fa-utensils"></i>
+        <h3>Fresh Ingredients</h3>
+        <p>
+            We use only fresh vegetables, premium spices, and high-quality ingredients
+            to prepare every dish with authentic taste.
+        </p>
+    </div>
+
+    <div class="feature-box">
+        <i class="fa-solid fa-kitchen-set"></i>
+        <h3>Expert Chefs</h3>
+        <p>
+            Our experienced chefs create delicious dishes with passion,
+            perfection, and traditional Indian recipes.
+        </p>
+    </div>
+
+    <div class="feature-box">
+        <i class="fa-solid fa-champagne-glasses"></i>
+        <h3>Luxury Dining</h3>
+        <p>
+            Enjoy a beautiful ambiance, elegant interiors,
+            and a memorable dining experience with your loved ones.
+        </p>
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="menu" id="menu">
+
+    <h4>Our Menu</h4>
+    <h2>Explore Our Delicious Dishes</h2>
+
+    <div class="menu-container">
+
+        <!-- ================= PIZZA ================= -->
+
+        <div class="menu-card">
+            <img src="images/farmhouse.png" alt="Farmhouse Pizza">
+            <h3>Farmhouse Pizza</h3>
+            <p>Fresh vegetables with mozzarella cheese.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹349</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Farmhouse Pizza"
+        data-price="349">
+        Add to Cart
+    </button>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/margherita.png" alt="Margherita Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese pizza with tomato sauce.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹299</span>
+            <a href="#" class="order-btn">Order Now</a>
+                <button class="add-cart"
+        data-name="Margherita Pizza"
+        data-price="299">
+        Add to Cart
+    </button>
+
+        </div>
+
+        <div class="menu-card">
+            <img src="images/paneer-pizza.png" alt="Paneer Tikka Pizza">
+            <h3>Paneer Tikka Pizza</h3>
+            <p>Spicy paneer tikka with fresh toppings.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹399</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Paneer Tikka Pizza"
+        data-price="399">
+        Add to Cart
+    </button>
+        </div>
+
+        <!-- ================= BURGER ================= -->
+
+        <div class="menu-card">
+            <img src="images/cheese-burger.png" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Cheesy burger with crispy patty.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹199</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Cheese Burger"
+        data-price="199">
+        Add to Cart
+    </button>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/veg-burger.png" alt="Crispy Burger">
+            <h3>Crispy Veg Burger</h3>
+            <p>Crunchy veg patty with fresh veggies.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹179</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Crispy Veg Burger"
+        data-price="179">
+        Add to Cart
+    </button>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/double-patty-burger.png" alt="Double Burger">
+            <h3>Double Patty Burger</h3>
+            <p>Double patty with extra cheese.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹249</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Double Patty Burger"
+        data-price="249">
+        Add to Cart
+    </button>
+        </div>
+
+        <!-- ================= PASTA ================= -->
+
+        <div class="menu-card">
+            <img src="images/white-pasta.png" alt="White Sauce Pasta">
+            <h3>White Sauce Pasta</h3>
+            <p>Creamy white sauce with herbs.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹279</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="White Sauce Pasta"
+        data-price="279">
+        Add to Cart
+    </button>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/red-pasta.png" alt="Red Sauce Pasta">
+            <h3>Red Sauce Pasta</h3>
+            <p>Italian tomato sauce pasta.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹259</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Red Sauce Pasta"
+        data-price="259">
+        Add to Cart
+    </button>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/alfredo.png" alt="Alfredo Pasta">
+            <h3>Alfredo Pasta</h3>
+            <p>Rich creamy Alfredo sauce pasta.</p>
+            <div class="rating">
+    ⭐⭐⭐⭐⭐
+</div>
+            <span>₹299</span>
+            <a href="#" class="order-btn">Order Now</a>
+               <button class="add-cart"
+        data-name="Alfredo Pasta"
+        data-price="299">
+        Add to Cart
+    </button>
+        </div>
+        <!-- ================= SANDWICHES ================= -->
+
+<div class="menu-card">
+    <img src="images/veg-sandwich.png" alt="Veg Sandwich">
+    <h3>Veg Sandwich</h3>
+    <p>Fresh vegetables with cheese.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹179</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Veg Sandwich"
+        data-price="179">
+        Add to Cart
+    </button>
+</div>
+
+<div class="menu-card">
+    <img src="images/grilled-sandwich.png" alt="Grilled Sandwich">
+    <h3>Grilled Sandwich</h3>
+    <p>Grilled bread with cheesy filling.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹199</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Grilled Sandwich"
+        data-price="199">
+        Add to Cart
+    </button>
+</div>
+
+<!-- ================= FRIES ================= -->
+
+<div class="menu-card">
+    <img src="images/french-fries.png" alt="French Fries">
+    <h3>French Fries</h3>
+    <p>Crispy golden fries with seasoning.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹149</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="French Fries"
+        data-price="149">
+        Add to Cart
+    </button>
+</div>
+
+<div class="menu-card">
+    <img src="images/peri-peri-fries.png" alt="Peri Peri Fries">
+    <h3>Peri Peri Fries</h3>
+    <p>Spicy peri peri seasoned fries.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹169</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Peri Peri Fries"
+        data-price="169">
+        Add to Cart
+    </button>
+</div>
+
+<!-- ================= SALADS ================= -->
+
+<div class="menu-card">
+    <img src="images/green-salad.png" alt="Green Salad">
+    <h3>Green Salad</h3>
+    <p>Fresh vegetables with dressing.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹199</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Green Salad"
+        data-price="199">
+        Add to Cart
+    </button>
+</div>
+
+<!-- ================= DESSERTS ================= -->
+
+<div class="menu-card">
+    <img src="images/brownie.png" alt="Brownie">
+    <h3>Chocolate Brownie</h3>
+    <p>Warm brownie served with chocolate sauce.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹229</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Chocolate Brownie"
+        data-price="229">
+        Add to Cart
+    </button>
+</div>
+
+<div class="menu-card">
+    <img src="images/ice-cream.png" alt="Ice Cream">
+    <h3>Ice Cream</h3>
+    <p>Vanilla, Chocolate & Strawberry scoops.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹149</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Ice Cream"
+        data-price="149">
+        Add to Cart
+    </button>
+</div>
+
+<!-- ================= DRINKS ================= -->
+
+<div class="menu-card">
+    <img src="images/cold-coffee.png" alt="Cold Coffee">
+    <h3>Cold Coffee</h3>
+    <p>Refreshing chilled coffee with cream.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹199</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Cold Coffee"
+        data-price="199">
+        Add to Cart
+    </button>
+</div>
+
+<div class="menu-card">
+    <img src="images/mango-lassi.png" alt="Mango Lassi">
+    <h3>Mango Lassi</h3>
+    <p>Fresh mango blended with milk.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹179</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Mango Lassi"
+        data-price="179">
+        Add to Cart
+    </button>
+</div>
+
+<div class="menu-card">
+    <img src="images/mojito.png" alt="Mint Mojito">
+    <h3>Mint Mojito</h3>
+    <p>Refreshing mint and lemon cooler.</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <span>₹169</span>
+    <a href="#" class="order-btn">Order Now</a>
+    <button class="add-cart"
+        data-name="Mint Mojito"
+        data-price="169">
+        Add to Cart
+    </button>
+</div>
+
+    </div>
+
+</section>
+<!-- Gallery Section -->
+
+<section class="gallery" id="gallery">
+
+    <h4>Our Gallery</h4>
+    <h2>Delicious Moments</h2>
+
+    <div class="gallery-container">
+
+        <img src="https://www.masierogroup.com/wp-content/uploads/2022/07/POSY_ristorante.jpg" alt="Gallery 1">
+
+        <img src="https://kckurryleaves.com/pluto-images/funnel/images/3aa95303-bef5-4b9b-b4d1-5ccf960d0ba2?w=1920&quality=60&fit=cover" alt="Gallery 2">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVid_gdsbvdC_vx6oYN7mDrquxxTEYnrswf8iuZJywwg&s=10" alt="Gallery 3">
+
+        <img src="https://i.pinimg.com/736x/b9/f9/23/b9f923ba59fff2db4e67499916dd7f1a.jpg" alt="Gallery 4">
+
+        <img src="https://bungalowdining.com/wp-content/uploads/Group-Shot-2-scaled.jpg" alt="Gallery 5">
+
+        <img src="https://www.nshoremag.com/wp-content/uploads/2022/01/2021_Dec_Northshore6321-Edit-759x500.jpg" alt="Gallery 6">
+
+    </div>
+
+</section>
+<!-- ================= BOOK TABLE ================= -->
+
+<section class="booking" id="booking">
+
+    <div class="booking-container">
+
+        <div class="booking-content">
+            <h4>Reservation</h4>
+            <h2>Book Your Table</h2>
+
+            <p>
+                Reserve your table online and enjoy a memorable dining
+                experience with your family and friends.
+                We serve fresh food prepared by our expert chefs
+                in a warm and luxurious atmosphere.
+            </p>
+
+            <div class="booking-info">
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> saffronrestaurant@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="booking-form">
+
+            <form>
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <input type="date" required>
+
+                <input type="time" required>
+
+                <select required>
+                    <option value="">Select Guests</option>
+                    <option>1 Person</option>
+                    <option>2 Persons</option>
+                    <option>3 Persons</option>
+                    <option>4 Persons</option>
+                    <option>5 Persons</option>
+                    <option>6+ Persons</option>
+                </select>
+
+                <textarea placeholder="Special Request"></textarea>
+
+                <button type="submit">Book Now</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials" id="testimonials">
+
+    <h4>Testimonials</h4>
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+
+            <img src="https://media.istockphoto.com/id/800302866/photo/pretty-waitress-holding-a-tray-with-sandwiches.jpg?s=612x612&w=0&k=20&c=dO_ctK3u5K76YH0ds23PvTF6ycSodhbndwyCQyk_bdQ=" alt="Customer">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Amazing food and excellent service. The ambience was beautiful,
+                and every dish was full of authentic flavors. Highly recommended!
+            </p>
+
+            <h3>Priya Sharma</h3>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="https://t4.ftcdn.net/jpg/02/65/81/03/360_F_265810309_0fUfIqx9w05jtZKrMJhl1jbl3Y0JuB8k.jpg" alt="Customer">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                One of the best restaurants I've visited. The staff was friendly,
+                and the food was absolutely delicious.
+            </p>
+
+            <h3>Rahul Verma</h3>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7tCTCQ-isUCR2tWK48tiNG1MSUWStzrmVxQjhJabRstwMxF7dUcMJz4X&s=10" alt="Customer">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Perfect place for family dinners. Beautiful interiors,
+                quick service, and mouth-watering food.
+            </p>
+
+            <h3>Anjali Mehta</h3>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h4>Contact Us</h4>
+    <h2>Get In Touch</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Address</h3>
+
+            <p>
+                Connaught Place,<br>
+                New Delhi, India
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <h3>Phone</h3>
+
+            <p>
+                +91 98765 43210<br>
+                +91 98765 12345
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <h3>Email</h3>
+
+            <p>
+                saffronrestaurant@gmail.com
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Opening Hours</h3>
+
+            <p>
+                Mon - Sun<br>
+                10:00 AM - 11:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Google Map -->
+
+<section class="map">
+
+    <iframe
+        src="https://www.google.com/maps?q=Connaught+Place+New+Delhi&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <p class="copyright">
+</p>
+<a href="https://facebook.com" target="_blank">
+</a>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <h2>Saffron Restaurant</h2>
+
+            <p>
+                Bringing authentic flavors and unforgettable dining experiences.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#booking">Book Table</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-social">
+
+    <h3>Follow Us</h3>
+
+    <div class="footer-social-icons">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Saffron Restaurant | All Rights Reserved.
+    </p>
+
+</footer>
+<button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+<script src="./res.js"></script>
+</body>
+
+</html>
