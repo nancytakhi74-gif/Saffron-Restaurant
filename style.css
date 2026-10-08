@@ -1429,3 +1429,253 @@ background:#D4AF37;
 #close-cart:hover{
     color:red;
 }
+
+/*=========================
+      MOBILE VIEW
+==========================*/
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        flex-direction:row;
+        padding:12px 15px;
+        height:75px;
+    }
+
+    .logo{
+        display:flex;
+        align-items:center;
+    }
+
+    .logo img{
+        width:50px;
+        height:50px;
+        margin-right:8px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:28px;
+        margin-left:auto;
+        margin-right:15px;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#7A0000;
+        flex-direction:column;
+        text-align:center;
+        padding:10px 0;
+        gap:0;
+        margin:0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    .nav-links a{
+        font-size:16px;
+    }
+
+    /* Cart */
+
+    .cart-icon{
+        margin-left:0;
+        font-size:22px;
+    }
+
+    /* Hero */
+
+    .hero{
+        margin-top:75px;
+        min-height:calc(100vh - 75px);
+        padding:20px;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:30px 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .btn{
+        font-size:16px;
+        padding:14px 30px;
+    }
+
+    /* About */
+
+    .about{
+        padding:70px 20px;
+    }
+
+    .about-container{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .about-content h2{
+        font-size:35px;
+    }
+
+    .about-content p{
+        font-size:16px;
+    }
+
+    .features{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    /* Menu */
+
+    .menu{
+        padding:70px 20px;
+    }
+
+    .menu h2{
+        font-size:35px;
+        margin-bottom:35px;
+    }
+
+    .menu-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .menu-card img{
+        height:220px;
+    }
+
+    .menu-card h3{
+        font-size:24px;
+    }
+
+    /* Gallery */
+
+    .gallery{
+        padding:70px 20px;
+    }
+
+    .gallery h2{
+        font-size:35px;
+        margin-bottom:35px;
+    }
+
+    .gallery-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .gallery-container img{
+        height:220px;
+    }
+
+    /* Booking */
+
+    .booking{
+        padding:70px 20px;
+    }
+
+    .booking h2{
+        font-size:35px;
+    }
+
+    .booking input,
+    .booking textarea{
+        width:100%;
+        font-size:15px;
+    }
+
+    /* Contact */
+
+    .contact{
+        padding:70px 20px;
+    }
+
+    .contact h2{
+        font-size:35px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    /* Footer */
+
+    footer{
+        padding:60px 20px 30px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:35px;
+        text-align:center;
+    }
+
+    .footer-logo h2{
+        font-size:32px;
+    }
+
+    .footer-logo p{
+        font-size:16px;
+    }
+
+    .footer-social{
+        align-items:center;
+    }
+
+    .footer-social-icons{
+        justify-content:center;
+    }
+
+    /* Top Button */
+
+    #topBtn{
+        width:45px;
+        height:45px;
+        right:15px;
+        bottom:20px;
+    }
+
+    /* Cart Panel */
+
+    #cart-panel{
+        width:85%;
+        right:-100%;
+    }
+
+    #cart-panel.active{
+        right:0;
+    }
+
+}
